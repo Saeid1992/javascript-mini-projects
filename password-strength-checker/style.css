@@ -1,1 +1,98 @@
+/* General Styling */
+body {
+  font-family: "Tahoma", sans-serif; /* Page font */
+  display: flex; /* Use flex to center */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(
+    180deg,
+    #111a29,
+    #2ebde5
+  ); /* Brand gradient background */
+  color: #fff; /* Default text color */
+}
+
+/* Container card */
+.container {
+  background: #1e2a3a; /* Card background */
+  padding: 30px; /* Inner spacing */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  width: 350px; /* Fixed width */
+}
+
+/* Heading style */
+h2 {
+  text-align: center; /* Centered text */
+  margin-bottom: 20px; /* Space below */
+  color: #e4bc87; /* Brand gold */
+}
+
+/* Input + Button wrapper */
+.input-wrapper {
+  display: flex; /* Align input and button horizontally */
+  width: 100%; /* Full width */
+}
+
+/* Input styling */
+input[type="password"],
+input[type="text"] {
+  flex: 1; /* Take remaining space */
+  padding: 12px; /* Inner spacing */
+  font-size: 16px; /* Readable font size */
+  border-radius: 8px 0 0 8px; /* Round left side */
+  border: none; /* Remove default border */
+  outline: none; /* Remove default outline */
+}
+
+/* Show/Hide button */
+.toggle-btn {
+  width: 80px; /* Fixed width as requested */
+  border: none; /* No border */
+  border-radius: 0 8px 8px 0; /* Round right side */
+  cursor: pointer; /* Pointer cursor on hover */
+  background: #e4bc87; /* Brand gold background */
+  color: #111a29; /* Dark text for contrast */
+  font-weight: bold; /* Emphasize text */
+  transition: background 0.3s; /* Smooth hover */
+}
+
+.toggle-btn:hover {
+  background: #2ebde5; /* Hover color: brand blue */
+  color: #111a29; /* Keep readable contrast */
+}
+
+/* Strength Bar layout */
+.strength-bar {
+  margin-top: 15px; /* Space above bar */
+  height: 10px; /* Thin height */
+  display: grid; /* Use grid for equal parts */
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 4px; /* Spacing between segments */
+}
+
+/* Individual segments */
+.strength-segment {
+  height: 100%; /* Fill bar height */
+  border-radius: 4px; /* Rounded edges */
+  background: #333; /* Default inactive color */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Inner shadow */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Active segment style uses currentColor for easy color setting from JS */
+.strength-segment.active {
+  background-color: currentColor; /* Use currentColor from JS */
+  box-shadow: 0 0 12px currentColor; /* Glow effect */
+}
+
+/* Strength label */
+.strength-text {
+  text-align: center; /* Center label */
+  margin-top: 12px; /* Space above */
+  font-weight: bold; /* Bold label */
+  visibility: hidden; /* Hidden until focus */
+  color: #e4bc87; /* Brand gold color */
+}
 
