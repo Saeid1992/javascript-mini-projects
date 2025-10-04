@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<!-- Document type: HTML5 -->
+<html lang="en">
+  <!-- Root element, language set to English -->
+  <head>
+    <!-- Head: metadata and links -->
+    <meta charset="UTF-8" />
+    <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mobile viewport -->
+    <title>Password Strength Checker</title>
+    <!-- Page title shown in the tab -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to external CSS file -->
+  </head>
+  <body>
+    <!-- Body: visible page content -->
+    <div class="container">
+      <!-- Main card container -->
+      <h2>Password Strength Checker</h2>
+      <!-- Heading for the app -->
 
+      <!-- Password input + show/hide button -->
+      <div class="input-wrapper">
+        <!-- Wrapper so input and button sit side-by-side -->
+        <input type="password" id="password" placeholder="Enter password" />
+        <!-- Password input -->
+        <button class="toggle-btn" id="toggle-btn">Show</button>
+        <!-- Show/Hide button -->
+      </div>
+
+      <!-- Strength bar -->
+      <div class="strength-bar">
+        <!-- Container for 4 segments -->
+        <div class="strength-segment"></div>
+        <!-- Segment 1 -->
+        <div class="strength-segment"></div>
+        <!-- Segment 2 -->
+        <div class="strength-segment"></div>
+        <!-- Segment 3 -->
+        <div class="strength-segment"></div>
+        <!-- Segment 4 -->
+      </div>
+
+      <!-- Strength label -->
+      <div class="strength-text" id="strength-text">Too short</div>
+      <!-- Label to show strength -->
+    </div>
+    <script src="script.js"></script>
+    <!-- Link to JavaScript -->
+  </body>
+</html>
