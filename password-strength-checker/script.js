@@ -53,16 +53,6 @@ passwordInput.addEventListener("input", () => {
     /[^a-zA-Z0-9]/.test(password), // Special char present?
   ];
 
-  // Special case: numbers only (like "111111")
-  if (/^\d+$/.test(password)) {
-    // If password is only digits
-    strengthText.textContent = "Weak"; // Treat as Weak
-    strengthText.style.color = "red"; // Red label
-    segments[0].classList.add("active"); // Activate first segment
-    segments[0].style.color = "red"; // Color it red
-    return; // Stop further checks
-  }
-
   // Score = number of rules passed (0..4)
   const strength = rules.filter(Boolean).length; // Count true values
 
