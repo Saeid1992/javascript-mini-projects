@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main weather card container -->
+    <div class="weather-card" id="weather-card">
+      <h1>Weather Widget</h1>
+      <!-- Input section -->
+      <input type="text" id="city-input" placeholder="Enter city name..." />
+      <button id="show-weather-btn">Show Weather</button>
+
+      <!-- Weather info display -->
+      <div id="weather-info" class="weather-info">
+        <div id="icon" class="icon">☀️</div>
+        <div id="temperature" class="temperature">--°C</div>
+        <div id="description" class="description">Type a city to begin</div>
+
+        <!-- Details -->
+        <div class="details">
+          <div class="detail">
+            💧 <span id="humidity">--%</span>
+            <span class="label">Humidity</span>
+          </div>
+          <div class="detail">
+            🍃 <span id="wind">-- km/h</span>
+            <span class="label">Wind Speed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
